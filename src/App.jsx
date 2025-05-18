@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Mobilebar from "./components/Mobilebar";
 import ImageCarousel from "./components/ImageCarousel";
@@ -37,7 +37,7 @@ export default function App() {
   return (
     <Router >
       <div style={{ paddingBottom: "70px" }}>
-        <Routes>
+        <Routes basename="/cryptoApp/">
           <Route path="/" element={<Home />} />
           <Route path="/markets" element={<Market />} />
           <Route path="/transaction" element={<Transaction />} />
