@@ -138,4 +138,4 @@ const Assets = () => {
 };
 
 export default Assets;
-Assets;
+
