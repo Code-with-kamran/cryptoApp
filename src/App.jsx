@@ -38,7 +38,7 @@ export default function App() {
     <Router >
       <div style={{ paddingBottom: "70px" }}>
         <Routes basename="/cryptoApp/">
-          <Route path="/" element={<Home />} />
+          <Route path="/cryptoApp/" element={<Home />} />
           <Route path="/markets" element={<Market />} />
           <Route path="/transaction" element={<Transaction />} />
           <Route path="/assets" element={<Assets />} />
