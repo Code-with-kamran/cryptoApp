@@ -35,10 +35,10 @@ function Home() {
 
 export default function App() {
   return (
-    <Router basename="/cryptoApp" >
+    <Router >
       <div style={{ paddingBottom: "70px" }}>
         <Routes>
-          <Route path="/cryptoApp" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/markets" element={<Market />} />
           <Route path="/transaction" element={<Transaction />} />
           <Route path="/assets" element={<Assets />} />
