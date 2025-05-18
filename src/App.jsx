@@ -35,10 +35,10 @@ function Home() {
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/cryptoApp" >
       <div style={{ paddingBottom: "70px" }}>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/cryptoApp" element={<Home />} />
           <Route path="/markets" element={<Market />} />
           <Route path="/transaction" element={<Transaction />} />
           <Route path="/assets" element={<Assets />} />
